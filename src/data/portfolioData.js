@@ -2,11 +2,11 @@
 export const personalInfo = {
   name: "Neelkamal Rana",
   title: "Java Developer | Spring Boot | React | AWS | Always Learning",
-  email: "your.email@example.com",
-  phone: "+1 (555) 123-4567",
-  location: "City, State",
+  email: "nkrneelkamalrana@gmail.com",
+  phone: "+1 (206) 665 4686",
+  location: "New York",
   github: "https://github.com/neelkamalrana",
-  linkedin: "https://linkedin.com/in/yourprofile",
+  linkedin: "https://linkedin.com/in/neelkamalrana",
   summary: "Passionate software developer with expertise in building scalable web applications. I love solving complex problems and creating user-friendly solutions that make a difference."
 };
 
@@ -14,7 +14,7 @@ export const projects = [
   {
     title: 'SkyConnect',
     description: 'Shortest path finder between airports using Dijkstra\'s algorithm. Built with Java and implements efficient graph algorithms for optimal route calculation.',
-    technologies: ['Java', 'Dijkstra Algorithm', 'Graph Theory', 'Data Structures'],
+    technologies: ['Java', 'Spring Boot', 'Dijkstra Algorithm', 'Graph Theory', 'Data Structures'],
     link: 'https://github.com/neelkamalrana/SkyConnect',
     image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&h=300&fit=crop'
   },
@@ -37,15 +37,28 @@ export const projects = [
 
 export const education = [
   {
-    degree: 'Bachelor of Technology in Computer Science',
-    institution: 'Your University Name',
-    duration: '2020 - 2024',
-    location: 'City, State',
+    degree: 'MS in Computer Science',
+    institution: 'Pace University',
+    duration: '2023 - 2025',
+    location: 'New York, NY',
     gpa: '3.8/4.0',
     highlights: [
       'Relevant Coursework: Data Structures, Algorithms, Database Systems, Web Development',
-      'Final Year Project: AI-powered recommendation system',
+      'Final Year Project: AI-Powered Phishing and Fraud Detection System',
       'Dean\'s List for academic excellence'
+    ]
+  },
+  
+  {
+    degree: 'Bachelor of Technology in Computer Science',
+    institution: 'Uttarakhand Technical University',
+    duration: '2017 - 2021',
+    location: 'Dehradun, Uttarakhand, India',
+    gpa: '3.8/4.0',
+    highlights: [
+      'Relevant Coursework: Data Structures, Algorithms, Database Systems, Web Development',
+      'Final Year Project: Face Recognition Attendance System',
+      'This application was used by the college to track attendance of students during the pandemic.'
     ]
   }
   // Add more education entries if needed
@@ -53,10 +66,10 @@ export const education = [
 
 export const experience = [
   {
-    title: 'Software Developer',
-    company: 'Tech Company Name',
-    duration: 'June 2024 - Present',
-    location: 'City, State',
+    title: 'Associate Software Developer',
+    company: 'HCL Technologies',
+    duration: 'November 2021 - August 2023',
+    location: 'Bangalore, India',
     description: [
       'Developed and maintained web applications using React and Spring Boot',
       'Collaborated with cross-functional teams to deliver high-quality software solutions',
@@ -67,14 +80,14 @@ export const experience = [
   },
   {
     title: 'Software Engineering Intern',
-    company: 'Previous Company Name',
-    duration: 'May 2023 - August 2023',
-    location: 'City, State',
+    company: 'Bharat Heavy Electricals Limited',
+    duration: 'May 2021 - August 2021',
+    location: 'Haridwar, India',
     description: [
-      'Built RESTful APIs and microservices using Java and Spring Framework',
-      'Participated in code reviews and contributed to team documentation',
-      'Worked on bug fixes and feature implementations',
-      'Gained experience with agile development methodologies'
+      'Built a real-time Android application for ground workers to update operational data remotely.',
+      'Integrated Java networking APIs and SQLite for efficient data transmission and offline caching.',
+      'Connected with a proprietary backend server to ensure secure, reliable data synchronization.',
+      'Enabled managerial tracking of field activities with seamless syncing and optimized performance, even offline.'
     ],
     technologies: ['Java', 'Spring', 'MySQL', 'Git', 'JUnit']
   }
@@ -84,6 +97,6 @@ export const experience = [
 export const skills = {
   programmingLanguages: ['Java', 'JavaScript', 'TypeScript', 'Python', 'SQL'],
   frameworks: ['Spring Boot', 'React', 'Node.js', 'Express.js'],
-  databases: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'],
+  databases: ['PostgreSQL', 'MySQL', 'MongoDB', 'DynamoDB'],
   tools: ['Git', 'Docker', 'AWS', 'Jenkins', 'JUnit']
 }; 
