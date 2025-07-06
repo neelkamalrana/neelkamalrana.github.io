@@ -287,7 +287,7 @@ function Home() {
       <div className="max-w-4xl mx-auto px-6 py-20">
         <div className="text-center mb-16">
           <img
-            src="/me.jpg"
+            src="/resources/me.jpg"
             alt="Neelkamal Rana"
             className="w-96 h-96 mx-auto mb-8 rounded-full object-cover border-4 border-white shadow-lg"
           />

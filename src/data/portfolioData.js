@@ -16,21 +16,21 @@ export const projects = [
     description: 'Shortest path finder between airports using Dijkstra\'s algorithm. Built with Java and implements efficient graph algorithms for optimal route calculation.',
     technologies: ['Java', 'Spring Boot', 'Dijkstra Algorithm', 'Graph Theory', 'Data Structures'],
     link: 'https://github.com/neelkamalrana/SkyConnect',
-    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&h=300&fit=crop'
+    image: '/resources/skyconnect.jpg'
   },
   {
     title: 'Swastha Sanchar',
     description: 'Community-driven wellness Android app using Firebase and Jetpack Compose. Features real-time health tracking and community support.',
     technologies: ['Android', 'Kotlin', 'Firebase', 'Jetpack Compose', 'Material Design'],
     link: 'https://github.com/neelkamalrana/SwasthaSanchar',
-    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop'
+    image: '/resources/swastha-sanchar.jpg'
   },
   {
     title: 'MoveEasy',
     description: 'Pay-as-you-go delivery platform for individuals and small businesses. Streamlines logistics with real-time tracking and payment integration.',
     technologies: ['React', 'Node.js', 'MongoDB', 'Payment Gateway', 'Real-time Tracking'],
     link: 'https://github.com/neelkamalrana/MoveEasy',
-    image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&h=300&fit=crop'
+    image: '/resources/moveeasy.jpg'
   }
   // Add more projects here as you complete them
 ];
