@@ -5,7 +5,7 @@ import { personalInfo, projects, education, experience, skills } from './data/po
 
 function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="max-w-4xl mx-auto px-6 py-20">
         <div className="text-center mb-16">
           <img
@@ -74,7 +74,7 @@ function Home() {
 
 function Projects() {
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">My Projects</h1>
@@ -128,7 +128,7 @@ function Projects() {
 
 function Education() {
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Education</h1>
@@ -178,7 +178,7 @@ function Education() {
 
 function Experience() {
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Work Experience</h1>
@@ -233,7 +233,7 @@ function Experience() {
 
 function Resume() {
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Resume</h1>
