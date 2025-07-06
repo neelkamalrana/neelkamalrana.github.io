@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import { Github, ExternalLink, Mail, Linkedin, Download, Building, GraduationCap, Briefcase } from 'lucide-react';
+import { Github, ExternalLink, Mail, Linkedin, Download, Building, GraduationCap, Briefcase, Phone } from 'lucide-react';
 import { personalInfo, projects, education, experience, skills } from './data/portfolioData';
 
 function Home() {
@@ -46,18 +46,27 @@ function Home() {
           </div>
         </div>
 
-                  <div className="text-center">
-            <div className="flex justify-center space-x-4">
-              <a href={`mailto:${personalInfo.email}`} className="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-                <Mail size={20} />
-                <span>Get in Touch</span>
-              </a>
-              <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition">
-                <Github size={20} />
-                <span>GitHub</span>
-              </a>
-            </div>
+        <div className="text-center">
+          <div className="flex justify-center space-x-4">
+            <a href={`mailto:${personalInfo.email}`} className="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+              <Mail size={20} />
+              <span>Get in Touch</span>
+            </a>
+            <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition">
+              <Github size={20} />
+              <span>GitHub</span>
+            </a>
           </div>
+          <div className="flex justify-center mt-4">
+            <a
+              href={`tel:${personalInfo.phone.replace(/[^+\d]/g, '')}`}
+              className="flex items-center space-x-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition"
+            >
+              <Phone size={20} />
+              <span>{personalInfo.phone}</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
