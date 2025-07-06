@@ -11,7 +11,7 @@ function Home() {
           <img
             src="/me.jpg"
             alt="Neelkamal Rana"
-            className="w-32 h-32 mx-auto mb-8 rounded-full object-cover border-4 border-white shadow-lg"
+            className="w-56 h-56 mx-auto mb-8 rounded-full object-cover border-4 border-white shadow-lg"
           />
           <h1 className="text-5xl font-bold text-gray-800 mb-4">Hi, I'm {personalInfo.name} 👋</h1>
           <p className="text-xl text-gray-600 mb-6">
