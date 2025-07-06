@@ -3,75 +3,6 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { Github, ExternalLink, Mail, Linkedin, Download, Building, GraduationCap, Briefcase, Phone } from 'lucide-react';
 import { personalInfo, projects, education, experience, skills } from './data/portfolioData';
 
-function Home() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      <div className="max-w-4xl mx-auto px-6 py-20">
-        <div className="text-center mb-16">
-          <img
-            src="/me.jpg"
-            alt="Neelkamal Rana"
-            className="w-96 h-96 mx-auto mb-8 rounded-full object-cover border-4 border-white shadow-lg"
-          />
-          <h1 className="text-5xl font-bold text-gray-800 mb-4">Hi, I'm {personalInfo.name} 👋</h1>
-          <p className="text-xl text-gray-600 mb-6">
-            {personalInfo.title}
-          </p>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
-            {personalInfo.summary}
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="p-6 rounded-xl shadow-lg">
-            <div className="text-blue-600 mb-4">
-              <Building size={32} />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Experience</h3>
-            <p className="text-gray-600">2+ years in software development with focus on Java and React</p>
-          </div>
-          <div className="p-6 rounded-xl shadow-lg">
-            <div className="text-green-600 mb-4">
-              <GraduationCap size={32} />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Education</h3>
-            <p className="text-gray-600">MS in Computer Science with concentration in Software Development</p>
-          </div>
-          <div className="p-6 rounded-xl shadow-lg">
-            <div className="text-purple-600 mb-4">
-              <Briefcase size={32} />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Projects</h3>
-            <p className="text-gray-600">Multiple full-stack projects showcasing various technologies</p>
-          </div>
-        </div>
-
-        <div className="text-center">
-          <div className="flex justify-center space-x-4">
-            <a href={`mailto:${personalInfo.email}`} className="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-              <Mail size={20} />
-              <span>Get in Touch</span>
-            </a>
-            <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition">
-              <Github size={20} />
-              <span>GitHub</span>
-            </a>
-          </div>
-          <div className="flex justify-center mt-4">
-            <a
-              href={`tel:${personalInfo.phone.replace(/[^+\d]/g, '')}`}
-              className="flex items-center space-x-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition"
-            >
-              <Phone size={20} />
-              <span>{personalInfo.phone}</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function Projects() {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
@@ -117,56 +48,6 @@ function Projects() {
                   <span>View on GitHub</span>
                   <ExternalLink size={14} />
                 </a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Education() {
-  return (
-    <div className="min-h-screen bg-gray-50 py-12">
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Education</h1>
-          <p className="text-lg text-gray-600">
-            My academic journey and achievements
-          </p>
-        </div>
-
-        <div className="space-y-8">
-          {education.map((edu, index) => (
-            <div key={index} className="rounded-xl shadow-lg p-8">
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2">{edu.degree}</h3>
-                  <p className="text-xl text-blue-600 font-semibold">{edu.institution}</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-sm text-gray-500">{edu.duration}</p>
-                  <p className="text-sm text-gray-500">{edu.location}</p>
-                </div>
-              </div>
-              
-              <div className="mb-4">
-                <span className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                  GPA: {edu.gpa}
-                </span>
-              </div>
-
-              <div>
-                <h4 className="font-semibold text-gray-800 mb-3">Key Highlights:</h4>
-                <ul className="space-y-2">
-                  {edu.highlights.map((highlight, highlightIndex) => (
-                    <li key={highlightIndex} className="flex items-start space-x-2">
-                      <span className="text-blue-500 mt-1">•</span>
-                      <span className="text-gray-600">{highlight}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
           ))}
@@ -222,6 +103,56 @@ function Experience() {
                     </span>
                   ))}
                 </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Education() {
+  return (
+    <div className="min-h-screen bg-gray-50 py-12">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">Education</h1>
+          <p className="text-lg text-gray-600">
+            My academic journey and achievements
+          </p>
+        </div>
+
+        <div className="space-y-8">
+          {education.map((edu, index) => (
+            <div key={index} className="rounded-xl shadow-lg p-8">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2">{edu.degree}</h3>
+                  <p className="text-xl text-blue-600 font-semibold">{edu.institution}</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm text-gray-500">{edu.duration}</p>
+                  <p className="text-sm text-gray-500">{edu.location}</p>
+                </div>
+              </div>
+              
+              <div className="mb-4">
+                <span className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                  GPA: {edu.gpa}
+                </span>
+              </div>
+
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-3">Key Highlights:</h4>
+                <ul className="space-y-2">
+                  {edu.highlights.map((highlight, highlightIndex) => (
+                    <li key={highlightIndex} className="flex items-start space-x-2">
+                      <span className="text-blue-500 mt-1">•</span>
+                      <span className="text-gray-600">{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
@@ -346,6 +277,79 @@ function Resume() {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function Home() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      <div className="max-w-4xl mx-auto px-6 py-20">
+        <div className="text-center mb-16">
+          <img
+            src="/me.jpg"
+            alt="Neelkamal Rana"
+            className="w-96 h-96 mx-auto mb-8 rounded-full object-cover border-4 border-white shadow-lg"
+          />
+          <h1 className="text-5xl font-bold text-gray-800 mb-4">Hi, I'm {personalInfo.name} 👋</h1>
+          <p className="text-xl text-gray-600 mb-6">
+            {personalInfo.title}
+          </p>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
+            {personalInfo.summary}
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="p-6 rounded-xl shadow-lg">
+            <div className="text-blue-600 mb-4">
+              <Building size={32} />
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Experience</h3>
+            <p className="text-gray-600">2+ years in software development with focus on Java and React</p>
+          </div>
+          <div className="p-6 rounded-xl shadow-lg">
+            <div className="text-green-600 mb-4">
+              <GraduationCap size={32} />
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Education</h3>
+            <p className="text-gray-600">MS in Computer Science with concentration in Software Development</p>
+          </div>
+          <div className="p-6 rounded-xl shadow-lg">
+            <div className="text-purple-600 mb-4">
+              <Briefcase size={32} />
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Projects</h3>
+            <p className="text-gray-600">Multiple full-stack projects showcasing various technologies</p>
+          </div>
+        </div>
+
+        <div className="text-center">
+          <div className="flex justify-center space-x-4">
+            <a href={`mailto:${personalInfo.email}`} className="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+              <Mail size={20} />
+              <span>Get in Touch</span>
+            </a>
+            <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition">
+              <Github size={20} />
+              <span>GitHub</span>
+            </a>
+          </div>
+          <div className="flex justify-center mt-4">
+            <a
+              href={`tel:${personalInfo.phone.replace(/[^+\d]/g, '')}`}
+              className="flex items-center space-x-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition"
+            >
+              <Phone size={20} />
+              <span>{personalInfo.phone}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <Projects />
+      <Experience />
+      <Education />
+      <Resume />
     </div>
   );
 }
