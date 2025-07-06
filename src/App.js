@@ -378,6 +378,9 @@ export default function App() {
               <a href={`mailto:${personalInfo.email}`} className="text-gray-600 hover:text-blue-600 transition">
                 <Mail size={20} />
               </a>
+              <a href={`tel:${personalInfo.phone.replace(/[^+\d]/g, '')}`} className="text-gray-600 hover:text-green-600 transition">
+                <Phone size={20} />
+              </a>
             </div>
           </div>
         </div>
