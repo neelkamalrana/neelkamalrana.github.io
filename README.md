@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# Neelkamal Rana - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React and Tailwind CSS. Showcase your projects, experience, education, and resume in a beautiful, professional format.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🏠 **Home Page** - Personal introduction with call-to-action buttons
+- 📁 **Projects** - Showcase your GitHub projects with technology tags and images
+- 💼 **Experience** - Display your work history with detailed descriptions
+- 🎓 **Education** - Highlight your academic achievements
+- 📄 **Resume** - Online resume with download option
+- 📱 **Responsive Design** - Works perfectly on desktop, tablet, and mobile
+- 🎨 **Modern UI** - Clean, professional design with smooth animations
+- ⚡ **Fast Loading** - Optimized for performance
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (version 14 or higher)
+- npm or yarn
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+```bash
+git clone https://github.com/neelkamalrana/neelkamalrana.github.io.git
+cd neelkamalrana.github.io
+```
 
-### `npm run build`
+2. Install dependencies:
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Customization
 
-### `npm run eject`
+### Updating Your Information
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+All your personal information is stored in `src/data/portfolioData.js`. Simply edit this file to update:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Personal Information**: Name, email, phone, location, social links
+- **Projects**: Add new projects with descriptions, technologies, and images
+- **Experience**: Update work history and responsibilities
+- **Education**: Modify academic background and achievements
+- **Skills**: Update technical skills and technologies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Example: Adding a New Project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```javascript
+// In src/data/portfolioData.js
+export const projects = [
+  // ... existing projects
+  {
+    title: 'Your New Project',
+    description: 'Description of your amazing project and what it does.',
+    technologies: ['React', 'Node.js', 'MongoDB'],
+    link: 'https://github.com/yourusername/project-name',
+    image: 'https://images.unsplash.com/photo-...?w=400&h=300&fit=crop'
+  }
+];
+```
 
-## Learn More
+### Customizing Styling
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The portfolio uses Tailwind CSS for styling. You can:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Modify colors in `tailwind.config.js`
+2. Update component styles in `src/App.js`
+3. Add custom CSS in `src/index.css`
 
-### Code Splitting
+### Adding Your Resume
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Place your resume PDF file in the `public/` directory
+2. Name it `resume.pdf`
+3. The resume page will automatically link to it
 
-### Analyzing the Bundle Size
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### GitHub Pages (Recommended)
 
-### Making a Progressive Web App
+This project is already configured for GitHub Pages deployment:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Push your changes to GitHub
+2. Run the deployment command:
+```bash
+npm run deploy
+```
 
-### Advanced Configuration
+3. Your portfolio will be available at `https://neelkamalrana.github.io`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Other Hosting Options
 
-### Deployment
+You can also deploy to:
+- **Netlify**: Connect your GitHub repository
+- **Vercel**: Import your project
+- **Firebase Hosting**: Use Firebase CLI
+- **AWS S3**: Upload the build folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Project Structure
 
-### `npm run build` fails to minify
+```
+neelkamalrana.github.io/
+├── public/
+│   ├── index.html
+│   ├── resume.pdf (add your resume here)
+│   └── ...
+├── src/
+│   ├── data/
+│   │   └── portfolioData.js (update your information here)
+│   ├── App.js (main component)
+│   ├── index.js
+│   └── index.css
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies Used
+
+- **React 19** - Frontend framework
+- **React Router** - Navigation and routing
+- **Tailwind CSS** - Styling and responsive design
+- **Lucide React** - Icons
+- **GitHub Pages** - Hosting
+
+## Contributing
+
+Feel free to fork this project and customize it for your own portfolio. If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Support
+
+If you need help customizing your portfolio or have questions, feel free to reach out!
+
+---
+
+**Happy coding! 🚀**
