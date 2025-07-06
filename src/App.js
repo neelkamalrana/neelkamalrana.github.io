@@ -35,7 +35,7 @@ function Home() {
               <GraduationCap size={32} />
             </div>
             <h3 className="text-xl font-semibold mb-2">Education</h3>
-            <p className="text-gray-600">B.Tech in Computer Science with strong academic background</p>
+            <p className="text-gray-600">MS in Computer Science with concentration in Software Development</p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <div className="text-purple-600 mb-4">
