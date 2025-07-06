@@ -23,21 +23,21 @@ function Home() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-white p-6 rounded-xl shadow-lg">
+          <div className="p-6 rounded-xl shadow-lg">
             <div className="text-blue-600 mb-4">
               <Building size={32} />
             </div>
             <h3 className="text-xl font-semibold mb-2">Experience</h3>
             <p className="text-gray-600">2+ years in software development with focus on Java and React</p>
           </div>
-          <div className="bg-white p-6 rounded-xl shadow-lg">
+          <div className="p-6 rounded-xl shadow-lg">
             <div className="text-green-600 mb-4">
               <GraduationCap size={32} />
             </div>
             <h3 className="text-xl font-semibold mb-2">Education</h3>
             <p className="text-gray-600">MS in Computer Science with concentration in Software Development</p>
           </div>
-          <div className="bg-white p-6 rounded-xl shadow-lg">
+          <div className="p-6 rounded-xl shadow-lg">
             <div className="text-purple-600 mb-4">
               <Briefcase size={32} />
             </div>
@@ -139,7 +139,7 @@ function Education() {
 
         <div className="space-y-8">
           {education.map((edu, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg p-8">
+            <div key={index} className="rounded-xl shadow-lg p-8">
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">{edu.degree}</h3>
@@ -189,7 +189,7 @@ function Experience() {
 
         <div className="space-y-8">
           {experience.map((exp, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg p-8">
+            <div key={index} className="rounded-xl shadow-lg p-8">
               <div className="flex items-start justify-between mb-6">
                 <div>
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">{exp.title}</h3>
@@ -262,7 +262,7 @@ function Resume() {
           </div>
         </div>
 
-        <div className="bg-white rounded-xl shadow-lg p-8">
+        <div className="rounded-xl shadow-lg p-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-2">{personalInfo.name}</h2>
             <p className="text-lg text-gray-600 mb-4">Software Developer</p>
