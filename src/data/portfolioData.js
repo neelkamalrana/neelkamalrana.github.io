@@ -31,6 +31,13 @@ export const projects = [
     technologies: ['React', 'Node.js', 'MongoDB', 'Payment Gateway', 'Real-time Tracking'],
     link: 'https://github.com/neelkamalrana/MoveEasy',
     image: '/resources/moveeasy.jpg'
+  },
+  {
+    title: 'Attendify',
+    description: 'Face recognition-based attendance system for meetings and classes. Upload screenshots, auto-mark attendance, and track insights via a modern dashboard.',
+    technologies: ['React', 'Vite', 'Python', 'Flask', 'face_recognition', 'dlib', 'OpenCV', 'Pillow', 'NumPy'],
+    link: 'https://github.com/neelkamalrana/Attendify',
+    image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80' // Unsplash: AI/face recognition theme
   }
   // Add more projects here as you complete them
 ];
