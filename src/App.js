@@ -14,9 +14,9 @@ function Projects() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 justify-items-center">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full max-w-sm">
               <div className="h-48 bg-gray-200 relative">
                 <img 
                   src={project.image} 
