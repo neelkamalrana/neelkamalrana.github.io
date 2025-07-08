@@ -85,12 +85,13 @@ export const experience = [
     duration: 'November 2021 - August 2023',
     location: 'Bangalore, India',
     description: [
-      'Developed and maintained web applications using React and Spring Boot',
-      'Collaborated with cross-functional teams to deliver high-quality software solutions',
-      'Implemented CI/CD pipelines and automated testing procedures',
-      'Optimized database queries and improved application performance by 30%'
+      'Designed and deployed a real-time courier tracking module used by 125+ companies, enabling tracking of 60M+ parcel statuses daily.',
+      'Built a reusable JAR to transform EDI logistics data to JSON/XML and deployed it across partner systems.',
+      'Migrated code from Camel to Java DSL, boosting shipment processing from 40M to 60M per day.',
+      'Implemented Redis caching, reducing API response time and enhancing performance.',
+      'Re-architected the data pipeline using ELK and RabbitMQ, increasing polling speed and system load capacity.'
     ],
-    technologies: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'Docker', 'AWS']
+    technologies: ['Java', 'Spring Boot', 'Apache Camel', 'Java DSL', 'Redis', 'ELK', 'RabbitMQ', 'EDI', 'JSON', 'XML', 'Docker', 'AWS']
   },
   {
     title: 'Software Engineering Intern',

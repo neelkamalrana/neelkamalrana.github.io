@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FDF6F0; /* pastel.background */
 }
 
 code {
@@ -17,8 +18,8 @@ code {
 }
 
 .bg-code-pattern {
-  background-color: #e5e7eb;
-  background-image: url('data:image/svg+xml;utf8,<svg width="320" height="320" xmlns="http://www.w3.org/2000/svg"><text x="0" y="20" font-size="16" fill="%23637485" fill-opacity="0.22" font-family="monospace">function helloWorld() { return &quot;Hello, World!&quot;; }</text><text x="0" y="60" font-size="16" fill="%23637485" fill-opacity="0.18" font-family="monospace">const sum = (a, b) =&gt; a + b;</text><text x="0" y="100" font-size="16" fill="%23637485" fill-opacity="0.15" font-family="monospace">for (let i = 0; i &lt; 10; i++) { console.log(i); }</text></svg>');
+  background-color: #A7C7E7; /* pastel.primary */
+  background-image: url('data:image/svg+xml;utf8,<svg width="320" height="320" xmlns="http://www.w3.org/2000/svg"><text x="0" y="20" font-size="16" fill="%2399badd" fill-opacity="0.22" font-family="monospace">function helloWorld() { return &quot;Hello, World!&quot;; }</text><text x="0" y="60" font-size="16" fill="%2399badd" fill-opacity="0.18" font-family="monospace">const sum = (a, b) =&gt; a + b;</text><text x="0" y="100" font-size="16" fill="%2399badd" fill-opacity="0.15" font-family="monospace">for (let i = 0; i &lt; 10; i++) { console.log(i); }</text></svg>');
   background-repeat: repeat;
   background-size: 320px 320px;
 }
