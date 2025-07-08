@@ -300,7 +300,7 @@ function Home() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        {/* <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="p-6 rounded-xl shadow-lg">
             <div className="text-blue-600 mb-4">
               <Building size={32} />
@@ -322,9 +322,9 @@ function Home() {
             <h3 className="text-xl font-semibold mb-2">Projects</h3>
             <p className="text-gray-600">Multiple full-stack projects showcasing various technologies</p>
           </div>
-        </div>
+        </div> */}
 
-        <div className="text-center">
+        {/* <div className="text-center">
           <div className="flex justify-center space-x-4">
             <a href={`mailto:${personalInfo.email}`} className="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
               <Mail size={20} />
@@ -344,7 +344,7 @@ function Home() {
               <span>{personalInfo.phone}</span>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
       <Projects />
       <Experience />
