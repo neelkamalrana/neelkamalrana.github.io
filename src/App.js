@@ -164,119 +164,22 @@ function Education() {
 
 function Resume() {
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Resume</h1>
-          <p className="text-lg text-gray-600 mb-8">
-            Download my latest resume or view it online
-          </p>
-          
-          <div className="flex justify-center space-x-4">
-            <a 
-              href="/resume.pdf" 
-              download
-              className="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
-            >
-              <Download size={20} />
-              <span>Download PDF</span>
-            </a>
-            <a 
-              href="/resume.pdf" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition"
-            >
-              <ExternalLink size={20} />
-              <span>View Online</span>
-            </a>
-          </div>
-        </div>
-
-        <div className="rounded-xl shadow-lg p-8">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-2">{personalInfo.name}</h2>
-            <p className="text-lg text-gray-600 mb-4">Software Developer</p>
-            <div className="flex justify-center space-x-4 text-sm text-gray-500">
-              <span>{personalInfo.email}</span>
-              <span>•</span>
-              <span>{personalInfo.phone}</span>
-              <span>•</span>
-              <span>{personalInfo.location}</span>
-            </div>
-          </div>
-
-          <div className="space-y-8">
-            <section>
-              <h3 className="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Summary</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Experienced software developer with expertise in Java, Spring Boot, and React. 
-                Passionate about building scalable web applications and solving complex problems. 
-                Strong background in full-stack development with experience in cloud technologies and agile methodologies.
-              </p>
-            </section>
-
-            <section>
-              <h3 className="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Technical Skills</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold text-gray-700 mb-2">Programming Languages</h4>
-                  <p className="text-gray-600">{skills.programmingLanguages.join(', ')}</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-700 mb-2">Frameworks & Libraries</h4>
-                  <p className="text-gray-600">{skills.frameworks.join(', ')}</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-700 mb-2">Databases</h4>
-                  <p className="text-gray-600">{skills.databases.join(', ')}</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-700 mb-2">Tools & Technologies</h4>
-                  <p className="text-gray-600">{skills.tools.join(', ')}</p>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h3 className="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Experience</h3>
-              <div className="space-y-4">
-                {experience.map((exp, index) => (
-                  <div key={index} className="border-l-4 border-blue-500 pl-4">
-                    <div className="flex justify-between items-start mb-2">
-                      <h4 className="font-semibold text-gray-800">{exp.title}</h4>
-                      <span className="text-sm text-gray-500">{exp.duration}</span>
-                    </div>
-                    <p className="text-blue-600 mb-2">{exp.company}</p>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      {exp.description.slice(0, 3).map((desc, descIndex) => (
-                        <li key={descIndex} className="flex items-start space-x-2">
-                          <span className="text-blue-500 mt-1">•</span>
-                          <span>{desc}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            <section>
-              <h3 className="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Education</h3>
-              {education.map((edu, index) => (
-                <div key={index} className="border-l-4 border-green-500 pl-4">
-                  <div className="flex justify-between items-start mb-2">
-                    <h4 className="font-semibold text-gray-800">{edu.degree}</h4>
-                    <span className="text-sm text-gray-500">{edu.duration}</span>
-                  </div>
-                  <p className="text-green-600 mb-1">{edu.institution}</p>
-                  <p className="text-sm text-gray-600">GPA: {edu.gpa}</p>
-                </div>
-              ))}
-            </section>
-          </div>
-        </div>
-      </div>
+    <div className="min-h-screen bg-gray-50 py-12 flex flex-col items-center justify-center">
+      <a 
+        href="/resume.pdf" 
+        download
+        className="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition mb-8"
+      >
+        <Download size={20} />
+        <span>Download PDF</span>
+      </a>
+      <iframe
+        src="/resume.pdf"
+        width="100%"
+        height="800px"
+        title="Resume PDF"
+        className="border rounded-lg shadow-lg"
+      />
     </div>
   );
 }

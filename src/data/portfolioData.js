@@ -3,7 +3,7 @@ export const personalInfo = {
   name: "Neelkamal Rana",
   title: "Full Stack Developer | Java Developer | Spring Boot | React | AWS | Always Learning",
   email: "nkrneelkamalrana@gmail.com",
-  phone: "+1 (206) 665 4686",
+  phone: "+1 206-665-4686",
   location: "New York",
   github: "https://github.com/neelkamalrana",
   linkedin: "https://linkedin.com/in/neelkamalrana",
