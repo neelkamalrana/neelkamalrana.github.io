@@ -10,7 +10,14 @@ export const personalInfo = {
   summary: "Passionate software developer with expertise in building scalable web applications. I love solving complex problems and creating user-friendly solutions that make a difference."
 };
 
-export const projects = [
+export const projects = [  
+  {
+    title: 'CyberSentinel',
+    description: 'AI-powered tool for detecting and monitoring email security threats like phishing and suspicious emails, with interactive visualizations in real time.',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Radix UI', 'Recharts'],
+    link: 'https://github.com/neelkamalrana/CyberSentinel',
+    image: '/resources/cybersentinel.jpg'
+  },
   {
     title: 'SkyConnect',
     description: 'Shortest path finder between airports using Dijkstra\'s algorithm. Built with Java and implements efficient graph algorithms for optimal route calculation.',
