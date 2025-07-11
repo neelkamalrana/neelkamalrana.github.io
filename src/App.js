@@ -266,9 +266,9 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-8">
-              <Link to="/" className="text-xl font-bold text-gray-800 hover:text-pastel-purple transition">
-                {personalInfo.name}
-              </Link>
+              <a href="https://leetcode.com/u/neelkamal" target="_blank" rel="noopener noreferrer" className="text-xl font-bold text-gray-800 hover:text-pastel-purple transition">
+                Leetcode
+              </a>
               <div className="hidden md:flex space-x-6">
                 <Link to="/" className="text-gray-600 hover:text-pastel-purple transition">Home</Link>
                 <Link to="/projects" className="text-gray-600 hover:text-pastel-purple transition">Projects</Link>
