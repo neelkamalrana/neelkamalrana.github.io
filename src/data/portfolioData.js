@@ -14,14 +14,14 @@ export const projects = [
   {
     title: 'CyberSentinel',
     description: 'AI-powered tool for detecting and monitoring email security threats like phishing and suspicious emails, with interactive visualizations in real time.',
-    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Radix UI', 'Recharts'],
+    technologies: ['React.js', 'Flask', 'Python', 'BERT', 'MongoDB', 'OpenAI API'],
     link: 'https://github.com/neelkamalrana/CyberSentinel',
     image: '/resources/cybersentinel.jpg'
   },
   {
     title: 'SkyConnect',
     description: 'Shortest path finder between airports using Dijkstra\'s algorithm. Built with Java and implements efficient graph algorithms for optimal route calculation.',
-    technologies: ['Java', 'Spring Boot', 'Dijkstra Algorithm', 'Graph Theory', 'Data Structures'],
+    technologies: ['React.js', 'Java', 'Spring Boot', 'Dijkstra Algorithm', 'Graph Theory', 'Data Structures'],
     link: 'https://github.com/neelkamalrana/SkyConnect',
     image: '/resources/skyconnect.jpg'
   },
@@ -35,18 +35,37 @@ export const projects = [
   {
     title: 'MoveEasy',
     description: 'Pay-as-you-go delivery platform for individuals and small businesses. Streamlines logistics with real-time tracking and payment integration.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Payment Gateway', 'Real-time Tracking'],
+    technologies: ['MERN Stack', 'React.js', 'Node.js', 'MongoDB', 'Express', 'AWS'],
     link: 'https://github.com/neelkamalrana/MoveEasy',
     image: '/resources/moveeasy.jpg'
   },
   {
     title: 'Attendify',
     description: 'Face recognition-based attendance system for meetings and classes. Upload screenshots, auto-mark attendance, and track insights via a modern dashboard.',
-    technologies: ['React', 'Vite', 'Python', 'Flask', 'face_recognition', 'dlib', 'OpenCV', 'Pillow', 'NumPy'],
+    technologies: ['React', 'Vite', 'Python', 'Flask', 'face_recognition', 'OpenCV', 'Pillow', 'NumPy'],
     link: 'https://github.com/neelkamalrana/Attendify',
-    image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80' // Unsplash: AI/face recognition theme
+    image: '/resources/attendify.jpg' 
   }
   // Add more projects here as you complete them
+];
+
+export const certifications = [
+   {
+     name: 'AWS Certified Cloud Practitioner',
+     image: '/resources/AWS Certified Cloud Practitioner certificate_page-0001.jpg'
+   },
+   {
+    name: 'HackerRank Software Engineer',
+    image: '/resources/software_engineer certificate_page-0001.jpg'
+  },
+  {
+    name: 'HackerRank Frontend Developer (React)',
+    image: '/resources/frontend_developer_react certificate_page-0001.jpg'
+  },
+  {
+    name: 'HackerRank Problem Solving (Intermediate)',
+    image: '/resources/problem_solving_intermediate certificate_page-0001.jpg'
+  }
 ];
 
 export const education = [
@@ -110,8 +129,9 @@ export const experience = [
 ];
 
 export const skills = {
-  programmingLanguages: ['Java', 'JavaScript', 'TypeScript', 'Python', 'SQL'],
-  frameworks: ['Spring Boot', 'React', 'Node.js', 'Express.js'],
-  databases: ['PostgreSQL', 'MySQL', 'MongoDB', 'DynamoDB'],
-  tools: ['Git', 'Docker', 'AWS', 'Jenkins', 'JUnit']
+  Programming: ['Java (Advanced)', 'Python', 'JavaScript/TypeScript', 'C++', 'MySQL', 'Android(Kotlin)'],
+  Frameworks: ['React JS', 'Node JS/Express', 'PyTorch', 'Spring Boot', 'Tailwind CSS'],
+  "AWS & DevOps": ['EC2', 'S3', 'Lambda', 'DynamoDB', 'Aurora', 'CDN', 'Fargate', 'Lightsail', 'Docker', 'GitHub Actions'],
+  Database: ['MySQL', 'MongoDB', 'PostgreSQL', 'DynamoDB'],
+  Concepts: ['Object-Oriented Design', 'Data Structures & Algorithms', 'Design Patterns', 'RESTful Services', 'Distributed Systems', 'CI/CD', 'Agile', 'Scrum', 'Jira']
 }; 

@@ -1,7 +1,7 @@
-import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom';
 import { Github, ExternalLink, Mail, Linkedin, Download, Building, GraduationCap, Briefcase, Phone } from 'lucide-react';
-import { personalInfo, projects, education, experience, skills } from './data/portfolioData';
+import { personalInfo, projects, education, experience, certifications } from './data/portfolioData';
 
 function Projects() {
   return (
@@ -52,6 +52,57 @@ function Projects() {
             </div>
           ))}
         </div>
+      </div>
+    </div>
+  );
+}
+
+function Certifications() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalImg, setModalImg] = useState(null);
+  const [modalAlt, setModalAlt] = useState('');
+
+  const openModal = (img, alt) => {
+    setModalImg(img);
+    setModalAlt(alt);
+    setModalOpen(true);
+  };
+  const closeModal = () => setModalOpen(false);
+
+  return (
+    <div id="certifications" className="min-h-screen" style={{ backgroundColor: '#FFF9DB' }}>
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">Certifications</h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Here are some of my certifications. Hover over a card to enlarge the certificate image. Click to view full size.
+          </p>
+        </div>
+        <div className="flex flex-wrap justify-center gap-8">
+          {certifications.map((cert, index) => (
+            <div key={index} className="bg-pastel-surface border border-pastel-gray rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full max-w-sm">
+              <div className="h-64 bg-pastel-gray relative group cursor-pointer" onClick={() => openModal(cert.image, cert.name)}>
+                <img 
+                  src={cert.image}
+                  alt={cert.name}
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center">{cert.name}</h3>
+              </div>
+            </div>
+          ))}
+        </div>
+        {modalOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70" onClick={closeModal}>
+            <div className="bg-white rounded-lg shadow-lg p-4 max-w-3xl w-full flex flex-col items-center relative" onClick={e => e.stopPropagation()}>
+              <button className="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-2xl font-bold" onClick={closeModal}>&times;</button>
+              <img src={modalImg} alt={modalAlt} className="max-h-[80vh] w-auto object-contain rounded" />
+              <div className="mt-2 text-lg font-semibold text-gray-800">{modalAlt}</div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -167,7 +218,7 @@ function Resume() {
     <div className="min-h-screen bg-pastel-background">
       <div className="flex justify-center w-full mb-8">
         <a 
-          href="/NeelkamalRana_Resume.pdf" 
+          href="/Neelkamal_Rana_Resume_SDE_2025.pdf" 
           download
           className="flex items-center space-x-2 bg-pastel-accent text-gray-800 px-6 py-3 rounded-lg hover:bg-pastel-secondary transition shadow"
         >
@@ -176,7 +227,7 @@ function Resume() {
         </a>
       </div>
       <iframe
-        src="/NeelkamalRana_Resume.pdf"
+        src="/Neelkamal_Rana_Resume_SDE_2025.pdf"
         width="100%"
         style={{ height: '100vh', width: '100%' }}
         title="NeelkamalRana_Resume"
@@ -187,6 +238,13 @@ function Resume() {
 }
 
 function Home() {
+  const location = useLocation();
+  React.useEffect(() => {
+    if (location.hash === '#certifications') {
+      const el = document.getElementById('certifications');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#F6D1C1' }}>
       <div className="max-w-4xl mx-auto px-6 py-20">
@@ -252,6 +310,7 @@ function Home() {
         </div> */}
       </div>
       <Projects />
+      <Certifications />
       <Experience />
       <Education />
       <Resume />
@@ -267,11 +326,25 @@ export default function App() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-8">
               <a href="https://leetcode.com/u/neelkamal" target="_blank" rel="noopener noreferrer" className="text-xl font-bold text-gray-800 hover:text-pastel-purple transition">
-                Leetcode
+                My Leetcode
               </a>
               <div className="hidden md:flex space-x-6">
                 <Link to="/" className="text-gray-600 hover:text-pastel-purple transition">Home</Link>
                 <Link to="/projects" className="text-gray-600 hover:text-pastel-purple transition">Projects</Link>
+                <button
+                  onClick={() => {
+                    if (window.location.pathname !== '/') {
+                      window.location.href = '/#certifications';
+                    } else {
+                      const el = document.getElementById('certifications');
+                      if (el) el.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="text-gray-600 hover:text-pastel-purple transition bg-transparent border-none cursor-pointer"
+                  style={{ padding: 0 }}
+                >
+                  Certifications
+                </button>
                 <Link to="/experience" className="text-gray-600 hover:text-pastel-purple transition">Experience</Link>
                 <Link to="/education" className="text-gray-600 hover:text-pastel-purple transition">Education</Link>
                 <Link to="/resume" className="text-gray-600 hover:text-pastel-purple transition">Resume</Link>
@@ -303,12 +376,6 @@ export default function App() {
         <Route path="/resume" element={<Resume />} />
       </Routes>
 
-      <footer className="bg-pastel-primary text-gray-700 py-0 mt-8">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="text-gray-600 mb-4">© 2025 {personalInfo.name}. All rights reserved.</p>
-          <p className="text-gray-500 text-sm">Built with React and ❤️</p>
-        </div>
-      </footer>
     </div>
   );
 }
