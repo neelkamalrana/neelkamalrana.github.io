@@ -219,7 +219,7 @@ function Resume() {
     <div className="min-h-screen bg-pastel-background">
       <div className="flex justify-center w-full mb-8">
         <a 
-          href="/resources/Neelkamal_Rana_Resume_2025.pdf" 
+          href="/resources/Neelkamal_Rana_Resume_SDE_2025.pdf" 
           download
           className="flex items-center space-x-2 bg-pastel-accent text-gray-800 px-6 py-3 rounded-lg hover:bg-pastel-secondary transition shadow"
         >
@@ -228,7 +228,7 @@ function Resume() {
         </a>
       </div>
       <iframe
-        src="/resources/Neelkamal_Rana_Resume_2025.pdf"
+        src="/resources/Neelkamal_Rana_Resume_SDE_2025.pdf"
         width="100%"
         style={{ height: '100vh', width: '100%' }}
         title="NeelkamalRana_Resume"
