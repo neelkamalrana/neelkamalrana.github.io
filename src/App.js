@@ -76,7 +76,7 @@ function Certifications() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Certifications</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Here are some of my certifications. Hover over a card to enlarge the certificate image. Click to view full size.
+            Here are some of my certifications. Click on a card to view full size.
           </p>
         </div>
         <div className="flex flex-wrap justify-center gap-8">
@@ -171,7 +171,7 @@ function Education() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Education</h1>
           <p className="text-lg text-gray-600">
-            My academic journey and achievements
+            My academic journey and achievements.
           </p>
         </div>
 
@@ -219,7 +219,7 @@ function Resume() {
     <div className="min-h-screen bg-pastel-background">
       <div className="flex justify-center w-full mb-8">
         <a 
-          href="/resources/Neelkamal_Rana.pdf" 
+          href="/resources/Neelkamal_Rana_Resume_SDE_2025.pdf" 
           download
           className="flex items-center space-x-2 bg-pastel-accent text-gray-800 px-6 py-3 rounded-lg hover:bg-pastel-secondary transition shadow"
         >
@@ -228,7 +228,7 @@ function Resume() {
         </a>
       </div>
       <iframe
-        src="/resources/Neelkamal_Rana.pdf"
+        src="/resources/Neelkamal_Rana_Resume_SDE_2025.pdf"
         width="100%"
         style={{ height: '100vh', width: '100%' }}
         title="NeelkamalRana_Resume"
