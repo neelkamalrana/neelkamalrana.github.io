@@ -50,7 +50,11 @@ export const projects = [
 ];
 
 export const certifications = [
-   {
+  {
+    name: 'Scrum Alliance Certified Scrum Master',
+    image: '/resources/Neelkamal Rana-ScrumAlliance_CSM_Certificate.jpg'
+  }, 
+  {
      name: 'AWS Certified Cloud Practitioner',
      image: '/resources/AWS Certified Cloud Practitioner certificate_page-0001.jpg'
    },
