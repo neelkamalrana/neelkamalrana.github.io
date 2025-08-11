@@ -51,6 +51,10 @@ export const projects = [
 
 export const certifications = [
   {
+    name: 'Cerified SAFe 6 Agilist',
+    image: '/resources/SAFe_Agilist_Certificate.jpg'
+  },
+  {
     name: 'Scrum Alliance Certified Scrum Master',
     image: '/resources/Neelkamal Rana-ScrumAlliance_CSM_Certificate.jpg'
   }, 
