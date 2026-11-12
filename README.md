@@ -37,3 +37,7 @@ New navigation uses same-page anchors, avoiding new client-side route dependenci
 ## Validation
 
 `CI=true npm test -- --watchAll=false` runs tests for honest project status, mobile navigation behavior, retained résumé links, and evaluation content. `npm run build` creates the static bundle. Desktop and mobile browser checks exercised project disclosures, mobile navigation, certificate expansion, and anchor links. The existing CRA toolchain prints deprecation and browser-database age warnings; no toolchain migration was included.
+
+## Dark appearance and motion
+
+Midnight navy surfaces, mint accents, and a decorative canvas background. On a fine pointer, a soft glow follows movement and nearby particles react. Pause/resume is available in the corner. Touch-only devices and reduced-motion preferences use a static field. Animation pauses in hidden tabs; particle count and render resolution are capped.

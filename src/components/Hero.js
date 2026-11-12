@@ -10,8 +10,9 @@ export default function Hero() {
           <em>AI ambitions.</em>
         </h1>
         <p className="intro">
-          I’m Neelkamal, a software engineer in New York, bringing backend
-          experience to a growing focus on AI engineering.
+          I’m Neelkamal, a software engineer in New York, bringing experience
+          in backend development and cloud computing to a growing focus on AI
+          engineering.
         </p>
         <div className="hero-actions">
           <a className="button button-primary" href="#work">
@@ -21,10 +22,6 @@ export default function Hero() {
             GitHub <span aria-hidden="true">↗</span>
           </a>
         </div>
-        <p className="hero-background">
-          Previously HCL Technologies <span aria-hidden="true">·</span> MS
-          Computer Science, Pace University
-        </p>
       </div>
       <figure
         className="system-diagram"

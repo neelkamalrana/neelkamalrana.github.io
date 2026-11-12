@@ -2,6 +2,13 @@ import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "./App";
 
+beforeEach(() => {
+  jest.spyOn(HTMLCanvasElement.prototype, "getContext").mockReturnValue(null);
+});
+afterEach(() => {
+  jest.restoreAllMocks();
+});
+
 test("unbuilt AI applications are labeled planned and have no fabricated demo links", () => {
   render(<App />);
   expect(screen.getAllByText("Planned")).toHaveLength(3);

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import InteractiveBackground from "./components/InteractiveBackground";
 import PortfolioHeader from "./components/PortfolioHeader";
 import Hero from "./components/Hero";
 import ProjectRoadmap, { Experiments } from "./components/ProjectRoadmap";
@@ -17,6 +18,7 @@ export default function App() {
   }, []);
   return (
     <>
+      <InteractiveBackground />
       <a className="skip-link" href="#main">
         Skip to content
       </a>

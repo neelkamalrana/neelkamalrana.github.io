@@ -16,10 +16,40 @@ export default function About() {
         </p>
       </div>
       <div className="background-details">
-        <div className="timeline">
+        <div className="timeline" aria-label="Education and career timeline">
+          <article>
+            <h3>NY Plates and Registration Solution Corp</h3>
+            <p className="role">Full Stack Developer · Jun 2026–Present</p>
+            <p className="timeline-location">New York, NY</p>
+            <p>
+              A React, TypeScript, and Supabase portal for registration intake,
+              document review, invoicing, and DMV tracking. AI document
+              extraction and automated DMV form filling with human review,
+              alongside secure role-based workflows, task pipelines, and batch
+              reporting.
+            </p>
+          </article>
+          <article>
+            <h3>Shoptaki</h3>
+            <p className="role">Software Engineer Intern · Oct 2025–Jun 2026</p>
+            <p className="timeline-location">Remote</p>
+            <p>
+              Next.js interfaces and analytics dashboards, AI-agent handoff
+              workflows, and backend services for identity verification.
+            </p>
+          </article>
+          <article>
+            <h3>Master of Science</h3>
+            <p className="role">Computer Science · Aug 2023–May 2025</p>
+            <p>Pace University. Concentration in Software Development.</p>
+            <p className="timeline-location">New York, NY</p>
+          </article>
           <article>
             <h3>HCL Technologies</h3>
-            <p className="role">Associate Software Developer · 2021–2023</p>
+            <p className="role">
+              Associate Software Developer · Nov 2021–Aug 2023
+            </p>
+            <p className="timeline-location">Bangalore, India</p>
             <p>
               Courier tracking, EDI integrations, caching, and data pipelines
               with Java, Spring Boot, Redis, and RabbitMQ.
@@ -27,22 +57,19 @@ export default function About() {
           </article>
           <article>
             <h3>Bharat Heavy Electricals Limited</h3>
-            <p className="role">Software Engineering Intern · 2021</p>
+            <p className="role">Software Engineering Intern · May–Aug 2021</p>
+            <p className="timeline-location">Haridwar, India</p>
             <p>
               An Android application for field operations, with offline storage
               and backend synchronization.
             </p>
           </article>
-        </div>
-        <div className="education" id="education">
-          <h3>Education</h3>
-          <p>
-            <strong>MS Computer Science</strong> — Pace University, 2023–2025
-          </p>
-          <p>
-            <strong>BTech Computer Science</strong> — Uttarakhand Technical
-            University, 2017–2021
-          </p>
+          <article id="education">
+            <h3>Bachelor of Technology</h3>
+            <p className="role">Computer Science · 2017–2021</p>
+            <p>Uttarakhand Technical University</p>
+            <p className="timeline-location">Dehradun, Uttarakhand, India</p>
+          </article>
         </div>
         <details className="certifications" id="certifications">
           <summary>
