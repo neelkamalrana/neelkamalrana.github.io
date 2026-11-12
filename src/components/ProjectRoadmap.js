@@ -62,6 +62,14 @@ export default function ProjectRoadmap() {
           interface with an honest look at how it works.
         </p>
       </div>
+      <article className="project-row" aria-labelledby="littlelift-title">
+        <div className="project-heading">
+          <span className="project-number" aria-hidden="true">↗</span>
+          <div><h3 id="littlelift-title">Little Lift</h3><p className="project-category">Independent web application · Public beta</p></div>
+        </div>
+        <p className="project-description">A no-signup community bill wall with optional images, direct PayPal links, and private links to manage requests. Payments happen on PayPal; the app does not verify transfers.</p>
+        <p><a href="/littlelift/">Open Little Lift ↗</a>{" · "}<a href="https://github.com/neelkamalrana/littlelift" target="_blank" rel="noopener noreferrer">View source ↗</a></p>
+      </article>
       <div className="project-list">
         {aiProjects.map((project) => (
           <ProjectRow key={project.id} project={project} />
