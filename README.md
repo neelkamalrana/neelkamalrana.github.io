@@ -1,6 +1,6 @@
 # Neelkamal Rana — AI portfolio preview
 
-Local redesign of the existing React / GitHub Pages portfolio. This is a review build, not a production release.
+Local redesign of the existing React / GitHub Pages portfolio. Approved for production publishing on November 12, 2026.
 
 ## Preview
 
@@ -26,11 +26,11 @@ Update project plans in `src/data/aiProjects.js`. Never mark an application live
 
 Source branch: `codex/ai-portfolio-preview`, based on `3a8a16a438ed38ef729c54f06cf0f882bd2adab6`.
 
-The redesign is shared on the review branch only. Publishing to production requires separate approval. The domain, CNAME, deployment scripts, dependencies, and GitHub Pages publishing branch are unchanged.
+The redesign was approved for production publishing on November 12, 2026. The domain, CNAME, deployment scripts, dependencies, and GitHub Pages publishing branch are unchanged.
 
 **Do not run `npm run deploy` for previewing.** The inherited command can publish to the live gh-pages branch even when run from a different source branch.
 
-The HTML deliberately contains `noindex, nofollow` for preview. Remove that only as part of an approved production release. Before release, verify actual Pages settings, archive the deployed version for rollback, review résumé consistency, and decide whether to wait for the first completed RAG application.
+The preview indexing restriction was removed for the approved production release. The previous deployment is preserved on `backup/pre-redesign-2026-11-12`. GitHub Pages publishes from `gh-pages`; source changes are maintained on `codex/ai-portfolio-preview`.
 
 New navigation uses same-page anchors, avoiding new client-side route dependencies on GitHub Pages. Legacy path handling in App only applies when the host serves the application shell; legacy URLs need a separate hosting/redirect decision before release.
 
