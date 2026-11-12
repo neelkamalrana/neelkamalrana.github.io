@@ -26,7 +26,7 @@ Update project plans in `src/data/aiProjects.js`. Never mark an application live
 
 Source branch: `codex/ai-portfolio-preview`, based on `3a8a16a438ed38ef729c54f06cf0f882bd2adab6`.
 
-This checkout's origin push URL is disabled as a local precaution. Nothing was pushed. The domain, CNAME, deployment scripts, dependencies, and GitHub Pages publishing branch are unchanged.
+The redesign is shared on the review branch only. Publishing to production requires separate approval. The domain, CNAME, deployment scripts, dependencies, and GitHub Pages publishing branch are unchanged.
 
 **Do not run `npm run deploy` for previewing.** The inherited command can publish to the live gh-pages branch even when run from a different source branch.
 
